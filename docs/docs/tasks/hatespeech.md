@@ -27,7 +27,7 @@ Hate speech detection is mostly used with the aim of providing support to modera
 
 The offensive language identification model is intended to solve the binary classification problem of identifying whether a text is offensive or not (contains profanity or insult), therefore, given a text, can predict two classes: `OFF` (offensive) or `NOT` (not offensive). 
 Its architecture is based on BERT [(Devlin et al. 2019)](https://www.aclweb.org/anthology/N19-1423/). 
-In particular, it is based on the pretrained [Danish BERT](https://github.com/botxo/nordic_bert) trained by BotXO and finetuned on the [DKHate](../datasets.md#dkhate) data using the [Transformers](https://github.com/huggingface/transformers) library. 
+In particular, it is based on the pretrained [Danish BERT](https://github.com/botxo/nordic_bert) trained by BotXO and finetuned on the [DKHate](../datasets.md#dkhate) data [(Sigurbergsson & Derczynski 2020)](https://aclanthology.org/2020.lrec-1.430/) using the [Transformers](https://github.com/huggingface/transformers) library. 
 
 The BERT Offensive model can be loaded with the `load_bert_offensive_model()` method. 
 Please note that it can maximum take 512 tokens as input at a time. The sentences are automatically truncated if longer.
@@ -108,5 +108,6 @@ The evaluation script `hatespeech_benchmarks.py` can be found [here](https://git
 ## 🎓 References 
 
 - Marc Pàmies, Emily Öhman, Kaisla Kajava, Jörg Tiedemann. 2020. [LT@Helsinki at SemEval-2020 Task 12: Multilingual or Language-specific BERT?](https://aclanthology.org/2020.semeval-1.205/). In **SemEval-2020**
+- Gudbjartur Ingi Sigurbergsson, Leon Derczynski. 2020. [Offensive Language and Hate Speech Detection for Danish](https://aclanthology.org/2020.lrec-1.430/). In **LREC 2020**
 
   
