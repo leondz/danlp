@@ -73,9 +73,9 @@ The dataset can also be downloaded directly:
 
 ### DKHate
 
-The DKHate dataset contains user-generated comments from social media platforms (Facebook and Reddit) 
+The DKHate dataset ([Sigurbergsson & Derczynski 2020](https://aclanthology.org/2020.lrec-1.430/)) contains user-generated comments from social media platforms (Facebook and Reddit) 
 annotated for various types and target of offensive language. 
-The original corpus used for the [OffensEval 2020](https://sites.google.com/site/offensevalsharedtask/results-and-paper-submission) shared task can be found [here](https://figshare.com/articles/dataset/Danish_Hate_Speech_Abusive_Language_data/12220805).  
+The corpus, later also used for the [OffensEval 2020](https://sites.google.com/site/offensevalsharedtask/results-and-paper-submission) shared task, can be found [here](https://figshare.com/articles/dataset/Danish_Hate_Speech_Abusive_Language_data/12220805).  
 Note that only labels for the sub-task A (Offensive language identification), i.e.  `NOT` (Not Offensive) / `OFF` (Offensive), are available.
 
 The dataset can be loaded with the DaNLP package:
